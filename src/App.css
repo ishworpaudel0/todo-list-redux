@@ -1,0 +1,18 @@
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  min-height: 100vh;
+  background-color: #f1f5f9; /* Light grey background so white cards pop */
+  font-family: 'Inter', sans-serif;
+}
+
+.app-wrapper {
+  width: 100%;
+  max-width: 650px; /* Constrains the width for a centered column look */
+  margin: 40px 20px;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,58 @@
+/* form.css */
+.form-container {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.form-title {
+    color: #1e293b; /* Ensure heading is dark enough */
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+/* Fixes the dark input visibility */
+.form input {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #334155; /* Dark background as seen in your screenshot */
+    color: #ffffff; /* Sets text to white for visibility */
+}
+
+/* Changes placeholder color to be visible on dark background */
+.form input::placeholder {
+    color: #cbd5e1;
+}
+
+/* Ensure the date picker icon is visible in some browsers */
+.form input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+/* Fixes the invisible submit button */
+.submit-btn {
+    background-color: #6366f1; /* Solid primary color */
+    color: #ffffff; /* White text */
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #4f46e5;
+}
