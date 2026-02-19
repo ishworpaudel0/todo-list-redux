@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <div className='app-wrapper'>
-        <Header title='Todo List' description='A simple todo list application built with React and TypeScript' />
+        <Header title='Todo List' description='A simple todo list application.' />
         
           <Routes>
             <Route index element={<ViewList />} />
